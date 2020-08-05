@@ -1,0 +1,108 @@
+.container {
+    max-width: 120rem;
+    margin: 8rem auto;
+    background-color: #f4f2f2;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, .3);
+    min-height: 50rem;
+    border: 2px solid red;
+    @media only screen and (max-width: 1200px) {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+.header {
+    height: 7rem;
+    background-color: #fff;
+    border-bottom: #f0eeee;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid black;
+}
+.content {
+}
+.sidebar {
+    color: white;
+    left: 16rem;
+    top: 15rem;
+    height: 30px;
+    flex: 0 0 18%;
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &__icon {
+            fill: white;
+            transform: scale(0.1);
+            position: absolute;
+            top: -280%;
+        }
+        &__link {
+            text-decoration: none;
+            color: white;
+            
+            position: absolute;
+            
+        }
+        &__item {
+            text-transform: uppercase;
+            background-color: black;
+            display: inline-block;
+            height: 30px;
+            width: 300px;
+            padding: .2rem;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #ffa700 75%,  #ff6700 100%);
+            background-size: 220%;
+            transition: all 1s;
+            
+            & {
+                border: 2px solid white;
+            }
+            &:hover, &--active {
+                background-position: 100%;
+            }
+        }
+        list-style: none;
+    }
+}
+span {
+    text-indent: -50%;
+    font-size: 1.4rem;
+}
+.hotel-view {
+    flex: 0 0 82%;
+    flex-direction: row;
+    position: relative;
+    
+}
+.detail {
+    display: flex;
+    background-color: #f3f9f9;
+    padding: 4.5rem;
+    border: 5px solid #ffa700;
+}
+.description {
+    background-color: white;
+    box-shadow: 0 2rem 4rem rgba(black, 1);
+    font-size: 1.4rem;
+    /*
+    position: absolute;
+    left: 21%;
+    top: 5rem;
+    */
+    margin-right: 4.5rem;
+    flex: 0 0 60%;
+    padding: 3rem;
+}
+.reviews {
+    //background-color: greenyellow;
+    flex: 0 0 40%;
+    flex: 1;
+    /*
+    position: absolute;
+    left: 69%;
+    top: 5rem;
+    */
+}
