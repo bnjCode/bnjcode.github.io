@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="sass/main.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>trillo &mdash; Your all-in-one booking app</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <img class="logo" src="img/logo.png">
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box" id="bookmark">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                        </svg>
+                        <p class="user-nav__notification">B</p>
+                    </div>
+                    
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-chat"></use>
+                        </svg>
+                        <p class="user-nav__notification">5</p>
+                    </div>
+                    
+                    <div class="user-nav__user">
+                        <img src="img/user.jpg" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Jonas</span>
+                    </div>
+                    
+                </nav>
+                <form action="#" class="search">
+                    <input class="search__input" type="text" placeholder="Search hotels">
+                    <div class="search__results">
+                        <ul class="search__results-list">
+                            <!--
+                            <li class="search__results-list__item"><a href="#" class="search__results-link">Novotel Basel</a>9.2<p class="search__results-item__des">Located in the bustling city centre...</p></li>
+                            <li class="search__results-list__item"><a href="#" class="search__results-link">NH Geneva</a>8.4<p class="search__results-item__des">Access the entire city of Geneva...</p></li>
+                            <li class="search__results-list__item"><a href="#" class="search__results-link">Holiday Inn Nice-Centre</a>9.0<p class="search__results-item__des">Sunny beach is right at your disp...</p></li>
+                            <li class="search__results-list__item"><a href="#" class="search__results-link">Roppongi Candeo Hotels Tokyo</a>8.8<p class="search__results-item__des">At a cultural hotspot, Candeo...</p></li>
+                            <li class="search__results-list__item"><a href="#" class="search__results-link">Yello Hotel Harmoni Jakarta</a>7.7<p class="search__results-item__des">Feel the diversity around you as y...</p></li>
+                            -->
+                        </ul>
+                    </div>
+                    <button class="search__button">
+                        <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
+                </form>
+                <p class="bookcoin">B 10000</p>
+                
+
+            </header>
+            <div class="content">
+                <nav class="sidebar">
+                    <ul class="sidebar__nav">
+                        <li class="sidebar__nav__item sidebar__nav__item--active">
+                            <a class="sidebar__nav__link" href="#">
+                                <svg class="sidebar__nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-home"></use>
+                                </svg>
+                                <span>Hotel</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__nav__item">
+                            <a class="sidebar__nav__link" href="#">
+                                <svg class="sidebar__nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                                </svg>
+                                <span>Flights</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__nav__item">
+                            <a class="sidebar__nav__link" href="#">
+                                <svg class="sidebar__nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-key"></use>
+                                </svg>
+                                <span>Car rental</span>
+                            </a>
+                        </li>
+                        <li class="sidebar__nav__item">
+                            <a class="sidebar__nav__link" href="#">
+                                <svg class="sidebar__nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-map"></use>
+                                </svg>
+                                <span>Tours</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <main class="hotel-view">
+                    <div class="gallery">
+                        <figure class="gallery__item">
+                            <h4 class="h4">Spectacular night lights</h4>
+                            <img class="gallery__photo" src="img/hotel-1.jpg">
+                        </figure>
+                        <figure class="gallery__item">
+                            <h4 class="h4">Where water meets trees.</h4>
+                            <img class="gallery__photo" src="img/hotel-2.jpg">
+                        </figure>
+                        <figure class="gallery__item">
+                            <h4 class="h4">Endless exploration</h4>
+                            <img class="gallery__photo" src="img/hotel-3.jpg">
+                        </figure>
+                    </div>
+                    <div class="overview">
+                        <h1 class="overview__heading">
+                            Hotel Las Palmas
+                        </h1>
+                        <div class="overview__stars">
+                            <svg class="overview__star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview__star">
+                                <use xlink:href="img/sprite.svg#icon-star"></use>
+                            </svg>
+                        </div>
+                        <div class="overview__location">
+                            <svg class="overview__location-pin">
+                                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                            </svg>
+                            <button class="button-inline" id="loc">Albufeira, Portugal</button>
+                        </div>
+                        <div class="overview__rating">
+                            <div class="overview__rating-average">7.1</div>
+                            <div class="overview__rating-count">8 reviews</div>
+                        </div>
+                    </div>
+                    <div class="cta">
+                        <button class="button" style="padding: 2rem 7.5rem;" id="checkBookings">
+                            Check your bookings
+                        </button>
+                        <h2 class="cta__book-now">
+                            Good news! We have 4 rooms left for your selected dates!
+                        </h2>
+                        <button class="button" id="button">
+                            <span class="button__visible">Book now</span>
+                            <span class="button__invisible">Only 4 rooms left</span>
+                        </button>
+                        <div class="timer">
+                            18h 45m 19s
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="description">
+                            <p class="paragraph" id="p">
+                                Hotel Las Palmas is located right next to the beach. Regular events are held at the hotel to keep you occupied. Kayak with one of our guides or enjoy our spa.
+                            </p>
+                            <p class="paragraph" id="p2">
+                                Discover the diverse culture of the region and watch the sunset while sunbathing on the beach.
+                            </p>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <svg class="list__item-icon">
+                                        <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                    </svg>
+                                    Close to the beach
+                                </li>
+                                <li class="list__item">
+                                    <svg class="list__item-icon">
+                                        <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                    </svg>
+                                    Breakfast included
+                                </li>
+                                <li class="list__item">
+                                    <svg class="list__item-icon">
+                                        <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                    </svg>
+                                    Free airport shuttle
+                                </li>
+                                <li class="list__item">
+                                    <svg class="list__item-icon">
+                                        <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                    </svg>
+                                    Free wifi in all rooms
+                                </li>
+                                <li class="list__item">
+                                    <svg class="list__item-icon">
+                                        <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                    </svg>
+                                    Air-conditioning/heating
+                                </li>
+                                <li class="list__item">
+                                    <svg class="list__item-icon">
+                                        <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                    </svg>
+                                    Pets allowed
+                                </li>
+                                <li class="list__item">
+                                    <svg class="list__item-icon">
+                                        <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                    </svg>
+                                    We speak all languages
+                                </li>
+                                <li class="list__item">
+                                    <svg class="list__item-icon">
+                                        <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                    </svg>
+                                    Perfect for families
+                                </li>
+                            </ul>
+                            <div class="recommend">
+                                4 people recommend this hotel.
+                            </div>
+                            <div class="recommend__friends">
+                                <img src="img/user-3.jpg" alt="" class="recommend_photo">
+                                <img src="img/user-4.jpg" alt="" class="recommend_photo">
+                                <img src="img/user-5.jpg" alt="" class="recommend_photo">
+                                <img src="img/user-6.jpg" alt="" class="recommend_photo">
+                            </div>
+                        </div>
+                        <div class="reviews">
+                            <figure class="review">
+                                <blockquote class="review__text">
+                                    This was not a very good experience for me. The staff talked back at me and constantly insisted that I go outside even when it was raining. Do not recommend.
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img class="review__photo" src="img/user-1.jpg">
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Jack Winston</p>
+                                        <p class="review__user-date">Aug 4, 2020</p>
+                                    </div>
+                                    <div class="review__rating">4.2</div>
+                                </figcaption>
+                            </figure>
+                            <figure class="review">
+                                <blockquote class="review__text">
+                                    I had a great time! It's amazing how friendly the staff was and they always catered to my needs. The hotel was extremely well furnished.
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img class="review__photo" src="img/user-2.jpg">
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Martha Harton</p>
+                                        <p class="review__user-date">June 19, 2020</p>
+                                    </div>
+                                    <div class="review__rating">10.0</div>
+                                </figcaption>
+                            </figure>
+                            <button class="button-inline">
+                                Show all <span>&rightarrow;</span>
+                            </button>
+                        </div>
+                    </div>
+                </main>
+                <div class="bookmarks">
+                    Bookmarks / Booking
+                    <ul class="bookmarks__list">
+                        <!--
+                        <li class="bookmarks__list__item">
+                            <a href="#" class="bookmarks__list__item-link">Holiday Inn Nice</a>
+                            <p class="bookmarks__list__item-loc">Nice, France</p>
+                        </li>
+                        <li class="bookmarks__list__item">
+                            <a href="#" class="bookmarks__list__item-link">Candeo Hotels Tokyo Roppongi</a>
+                            <p class="bookmarks__list__item-loc">Minato-ku Roppongi 6</p>
+                        </li>
+                    -->
+                    </ul>
+                </div>
+                <div class="chat">
+                    Chat
+                    <ul class="chat__list">
+                        
+                        <li class="chat__list__item">
+                            <a href="#" class="chat__list__item-link">Benny Anonym sent you a message</a>
+                            <p class="chat__list__item-message">50% off at Hotel Las Palmas!</p>
+                        </li>
+                        <li class="chat__list__item">
+                            <a href="#" class="chat__list__item-link">Andra Nihea sent you a message</a>
+                            <p class="chat__list__item-message">off to Japan next week. Come?</p>
+                        </li>
+                        <li class="chat__list__item">
+                            <a href="#" class="chat__list__item-link">Jack Fletcher sent you a message</a>
+                            <p class="chat__list__item-message">im coming with u to jakarta :)</p>
+                        </li>
+                        <li class="chat__list__item">
+                            <a href="#" class="chat__list__item-link">Masamoto Takeshi sent you a message</a>
+                            <p class="chat__list__item-message">we're off 2 da beach tomorrow to train</p>
+                        </li>
+                        <li class="chat__list__item">
+                            <a href="#" class="chat__list__item-link">Maddy Lewis sent you a message</a>
+                            <p class="chat__list__item-message">had a surreal xprience in basel!</p>
+                        </li>
+                    
+                    </ul>
+                </div>
+                <div class="popup" id="popup1">
+                    <div class="popup__content">
+                        <h1 class="popup__heading">Step 1 of 3</h1>
+                        <p class="popup__paragraph">Children below the age of 5 book for free. Age 6-18 costs half of adult price.</p>
+                        <div class="popup__info">
+                            <div class="popup__input-container">
+                                Adults (full price): <input id="adult" type="number" class="popup__input-box" min="1" max="10" value="2">
+                                Children (half price, age 6-18): <input id="child" type="number" class="popup__input-box" min="0" max="10" value="1">
+                            </div>
+                            <div class="popup__alert">
+                                Prices are twice as high as usual in high season (July, August, December, January).
+                            </div>
+                        </div>
+                        <button class="button" id="a" style="padding: 2rem 7.5rem; margin-top: 10rem;">CLOSE</button>
+                        <button class="popup__nextstep">Go to next step</button>
+                    </div>
+                </div>
+                <div class="popup" id="popup2">
+                    <div class="popup__content">
+                        <h1 class="popup__heading2">Step 1 of 3</h1>
+                        <p class="popup__paragraph2">You selected: 2 adults and 1 child. Please specify the type of room you would like.</p>
+                        <div class="popup__info">
+                            <div class="popup__input-container">
+                                <select class="popup__input-select">
+                                    <option selected>Quicky room (200$ for adult, 400 in high season)</option>
+                                    <option>Family Suite (400$ for adult, 800 in high season)</option>
+                                    <option>Hotel Mansion (700$ for adult, 1400 in high season)</option>
+                                    <option>Beach Suites (1000$ for adult, 500$ in high season)</option>
+                                </select>
+                            </div>
+                            <div class="popup__alert">
+                                50% discount on "Beach Suites" during high season.
+                            </div>
+                        </div>
+                        <button class="button" id="a2" style="padding: 2rem 7.5rem; margin-top: 10rem;">CLOSE</button>
+                        <button class="popup__nextstep2">Go to next step</button>
+                    </div>
+                </div>
+                <div class="popup" id="popup3">
+                    <div class="popup__content">
+                        <h1 class="popup__heading3">Step 1 of 3</h1>
+                        <p class="popup__paragraph3">Please pay 1200 Bookcoin for your stay.</p>
+                        <div class="popup__info">
+                            <div class="popup__alert3">
+                                This step cannot be reversed. 1200 Bookcoin will be charged to your account.
+                            </div>
+                        </div>
+                        <button class="button" id="a3" style="padding: 2rem 7.5rem; margin-top: 10rem;">CLOSE</button>
+                        <button class="popup__nextstep3">Finish</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
